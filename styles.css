@@ -1,0 +1,347 @@
+:root {
+    font-size: 16px;
+    font-family: 'Alata', sans-serif;;
+    --text-primary: #f1f3f8;
+    --text-secondary: #e94560;
+    --bg-primary: #16213e;
+    --bg-secondary: #1a1a2e;
+    scroll-behavior: smooth;
+}
+
+body {
+    color:var(--bg-secondary);
+    background-color: var(--text-primary);
+    margin: 0;
+    padding: 0;
+    
+}
+
+h1 {
+    margin-top: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+label {
+    font-size: 1.3rem;
+
+}
+
+input {
+    text-align:center;
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--bg-secondary);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--text-secondary);
+}
+
+#nav-bar {
+    height: 3rem;
+    width: 100%;
+    padding-bottom: 0;
+    position: fixed;
+    background-color: var(--bg-primary);
+}
+
+.nav-bar-nav {
+    height: 3rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+
+.logo {
+    color: var(--text-primary);
+    font-size: 2rem;
+}
+
+.icons {
+    font-size: 1.5rem;
+}
+
+.nav-item {
+    margin-right: 1rem;
+}
+
+
+.link-text {
+    margin-left: 0.5rem;
+    
+}
+.link-items {
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo-item {
+    margin-right:auto;
+    margin-left: 0.5rem;
+}
+.nav-link {
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link:hover {
+    color: var(--text-secondary);
+}
+
+#page-content {
+    padding-top:3rem;
+    text-align: center;
+}
+
+/*  Heading Page */
+
+#heading-page {
+    margin-top: 0;
+  background-image: url(https://cdn.theatlantic.com/thumbor/8nRzlZIyk-7iJSq8qz68WZA14n8=/32x354:2498x1638/960x500/media/img/mt/2019/07/GettyImages_138965532/original.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  padding: 8% 3%;
+}
+#email {
+    width: 70%;
+    height: 2rem;
+    margin-top: 1rem;
+    box-sizing:border-box;
+    border-radius: 0.5rem;
+    border-style:solid;
+    border-color: var(--bg-primary);
+}
+
+.heading-content {
+    color: var(--text-primary);
+    background-color: rgba(26, 26, 46, 0.5);
+    width: 30%;
+    padding: 3% 0;
+    margin:0 auto;
+    border-radius: 2rem;
+    border-style:solid;
+    border-color: var(--bg-primary);
+}
+
+/* Pricing */
+
+#pricing {
+    background-color: var(--text-primary);
+    color: var(--bg-primary);
+    margin: 0;
+    padding: 3rem 8%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "heading heading heading"
+    "first-card second-card third-card";
+}
+
+.pricing-card {
+    padding: 0 1rem;
+    border-style: solid;
+    margin: 1rem;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    border-color: black;
+    border-width: 0.1em;
+    border-radius: 0.2em;
+}
+
+.first-card {
+    grid-area: first-card;
+}
+.second-card {
+    grid-area: second-card;
+}
+.third-card {
+    grid-area: third-card;
+}
+.pricing-heading {
+    grid-area: heading;
+    justify-self: center;
+}
+
+/* Buttons */
+.myButton {
+    
+	box-shadow:inset 0px 0px 0px -1px #ffffff;
+    background-color:var(--text-secondary);
+    border: solid;
+    border-width: 1px;
+    border-color:var(--text-secondary);
+	border-radius:4px;
+	border: none;
+	display:inline-block;
+	cursor:pointer;
+	color:var(--bg-secondary);
+	font-size:15px;
+	font-weight:bold;
+	padding:13px 44px;
+    text-decoration:none;
+    transition: background-color 0.3s;
+    margin-top: auto;
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+.myButton:hover {
+    background-color:white;
+    
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.sign-up-button {
+    
+	box-shadow:inset 0px 0px 0px -1px #ffffff;
+    background-color:var(--bg-primary);
+    border: solid;
+	border-radius:4px;
+	border: none;
+	display:inline-block;
+	cursor:pointer;
+	color:var(--text-primary);
+	font-size:15px;
+    font-weight:bold;
+    text-decoration:none;
+    transition: color 0.3s;
+    margin-top: 1rem;
+    width: 15vh;
+    height: 3vh;
+    text-align:center;
+    box-sizing:border-box;
+}
+.sign-up-button:hover {
+   color:var(--text-secondary);
+    
+}
+.sign-up-button:active {
+	position:relative;
+	top:1px;
+}
+
+/* features */
+
+#features {
+    padding: 3rem 8%;
+    text-align:left;
+}
+.feature-icon {
+    color: var(--text-secondary);
+    font-size: 4rem;
+    align-self: center;
+}
+.one-feature {
+    display: grid;
+    grid-template-columns: 15% auto;
+    grid-template-rows: 1fr;
+}
+.features-heading {
+    margin-bottom: 2rem;
+    text-align:center;
+}
+/* video */
+
+#video-section {
+    padding: 3rem 8%;
+}
+
+#video {
+    width: 70%;
+}
+
+/* contact */
+
+#contact {
+    padding: 3rem 8% 1rem 8%;
+    background-color: rgba(214, 213, 213, 0.171);
+
+}
+
+#copyright {
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    color: grey;
+}
+
+.contact-icon {
+    font-size:2rem;
+    color: var(--bg-primary);
+    transition: color 0.2s;
+    margin:0 0.5rem;
+}
+
+.contact-icon:hover{
+    color:var(--text-secondary);
+}
+
+@media screen and (max-width:1154px){
+    #pricing {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        "heading heading"
+        "first-card second-card"
+        "third-card third-card"
+        ;
+    }
+    .heading-content {
+        width: 60%;
+    }
+
+    #video {
+        width: 80%;
+        height: 35rem;
+
+    }
+}
+@media screen and (max-width:777px){
+
+    .heading-content {
+        width: 90%;
+        height: 30rem;
+    }
+
+    #pricing {
+        grid-template-columns: 1fr ;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+        "heading"
+        "first-card "
+        "second-card"
+        "third-card"
+        ;
+    }
+    .one-feature {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 15% auto 15% auto 15% auto;
+    }
+    #features {
+        text-align:center;
+    }
+    #video {
+        width: 100%;
+        height: 25rem;
+    }
+}
